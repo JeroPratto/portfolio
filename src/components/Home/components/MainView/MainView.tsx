@@ -1,5 +1,4 @@
 import Magnet from './components/Magnet'
-// import Magnet from './components/Magnet-timer'
 import styles from './styles/mainView.module.css'
 
 export type MainViewProps = {

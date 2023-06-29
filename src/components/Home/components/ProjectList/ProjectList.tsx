@@ -16,7 +16,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ clicked }) => {
 			}`}
 		>
 			{projectList.map((project) => (
-				<Project project={project} />
+				<Project key={project.urlGithub} project={project} />
 			))}
 		</div>
 	)
