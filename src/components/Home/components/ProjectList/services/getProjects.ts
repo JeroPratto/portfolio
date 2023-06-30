@@ -43,7 +43,7 @@ const getProjects = (): ProjectInterface[] => {
 			description: 'Portfolio',
 		},
 		{
-			urlImage: '/images/ProjectList/tablero.png',
+			urlImage: '/images/ProjectList/tablero.webp',
 			title: 'Tablero Kanban',
 			tags: '[ REACT / REDUX TOOLKIT / TYPESCRIPT]',
 			urlGithub: 'https://github.com/JeroPratto/kanban-board',

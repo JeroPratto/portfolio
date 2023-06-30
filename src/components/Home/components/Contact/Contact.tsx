@@ -12,20 +12,15 @@ const Contact = () => {
 				EMAIL
 			</a>
 			<div className={styles.containerSocials}>
-				<a
-					target='_blank'
-					className={styles.containerImg}
-					aria-label='go to jeronimo linkedin'
-				>
-					<img src={linkedin} alt='' />
+				<a target='_blank' className={styles.containerImg}>
+					<img src={linkedin} alt='go to jeronimo linkedin' />
 				</a>
 				<a
 					target='_blank'
 					className={styles.containerImg}
 					href='https://github.com/JeroPratto'
-					aria-label='go to jeronimo github'
 				>
-					<img src={github} alt='' />
+					<img src={github} alt='go to jeronimo github' />
 				</a>
 			</div>
 		</div>
