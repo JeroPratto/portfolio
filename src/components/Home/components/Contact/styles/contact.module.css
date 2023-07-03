@@ -48,3 +48,24 @@
 	height: 15px;
 	width: 15px;
 }
+
+@media screen and (max-width: 800px) {
+	.container {
+		bottom: 20px;
+		right: 5px;
+	}
+	.link {
+		writing-mode: vertical-rl;
+		text-orientation: upright;
+		white-space: nowrap;
+		width: auto;
+		padding: 5px;
+	}
+	.containerSocials {
+		flex-direction: column;
+	}
+	.containerSocials img {
+		height: 12px;
+		width: 12px;
+	}
+}

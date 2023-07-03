@@ -4,6 +4,7 @@ const getProjects = (): ProjectInterface[] => {
 	const projetcs = [
 		{
 			urlImage: '/images/ProjectList/basement.webp',
+			urlImageMobile: '/images/ProjectList/basementMobile.webp',
 			title: 'Basement',
 			tags: '[ NEXTJS / REDUX TOOLKIT / TESTING ]',
 			urlGithub: 'https://github.com/JeroPratto/basement-challenge',
@@ -12,6 +13,7 @@ const getProjects = (): ProjectInterface[] => {
 		},
 		{
 			urlImage: '/images/ProjectList/blog.webp',
+			urlImageMobile: '/images/ProjectList/blogMobile.webp',
 			title: 'Blog Personal',
 			tags: '[ NEXTJS / TYPESCRIPT / TAILWIND ]',
 			urlGithub: 'https://github.com/JeroPratto/blog-personal',
@@ -20,6 +22,7 @@ const getProjects = (): ProjectInterface[] => {
 		},
 		{
 			urlImage: '/images/ProjectList/meli-1.webp',
+			urlImageMobile: '/images/ProjectList/meliMobile.webp',
 			title: 'Mercado Libre',
 			tags: '[ REACT / TYPESCRIPT ]',
 			urlGithub: 'https://github.com/JeroPratto/mercado-libre',
@@ -28,6 +31,7 @@ const getProjects = (): ProjectInterface[] => {
 		},
 		{
 			urlImage: '/images/ProjectList/infobae.webp',
+			urlImageMobile: '/images/ProjectList/infobaeMobile.webp',
 			title: 'Infobae',
 			tags: '[ NEXTJS / TYPESCRIPT ]',
 			urlGithub: 'https://github.com/JeroPratto/clon-infobae',
@@ -36,6 +40,7 @@ const getProjects = (): ProjectInterface[] => {
 		},
 		{
 			urlImage: '/images/ProjectList/portfolio.webp',
+			urlImageMobile: '/images/ProjectList/portfolioMobile.webp',
 			title: 'Portfolio',
 			tags: '[ REACT / TYPESCRIPT]',
 			urlGithub: 'https://github.com/JeroPratto/portfolio.git',
@@ -44,6 +49,7 @@ const getProjects = (): ProjectInterface[] => {
 		},
 		{
 			urlImage: '/images/ProjectList/tablero.webp',
+			urlImageMobile: '/images/ProjectList/tableroMobile.webp',
 			title: 'Tablero Kanban',
 			tags: '[ REACT / REDUX TOOLKIT / TYPESCRIPT]',
 			urlGithub: 'https://github.com/JeroPratto/kanban-board',

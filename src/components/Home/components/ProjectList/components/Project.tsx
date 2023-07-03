@@ -8,11 +8,15 @@ export type ProjectProps = {
 const Project: React.FC<ProjectProps> = ({ project }) => {
 	return (
 		<div className={styles.containerProject}>
-			<img
-				src={project.urlImage}
-				alt={project.description}
-				className={styles.image}
-			/>
+			<picture>
+				<source srcSet={project.urlImageMobile} media='(max-width: 800px)' />
+				<source srcSet={project.urlImage} media='(min-width: 801px)' />
+				<img
+					src={project.urlImage}
+					alt={project.description}
+					className={styles.image}
+				/>
+			</picture>
 			<div className={styles.containerInfo}>
 				<p className={styles.tags}>{project.tags}</p>
 				<div className={styles.containerTitleAndDescription}>

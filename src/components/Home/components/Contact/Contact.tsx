@@ -6,12 +6,13 @@ const Contact = () => {
 		<div className={styles.container}>
 			<a
 				href='mailto:jeropratto@yahoo.com.ar'
-				className={`${styles.link} link`}
+				className={styles.link}
 				aria-label='send emial to jeronimo'
 			>
 				EMAIL
 			</a>
 			<div className={styles.containerSocials}>
+				{/* falta href */}
 				<a target='_blank' className={styles.containerImg}>
 					<img src={linkedin} alt='go to jeronimo linkedin' />
 				</a>
