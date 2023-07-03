@@ -12,8 +12,7 @@ const Contact = () => {
 				EMAIL
 			</a>
 			<div className={styles.containerSocials}>
-				{/* falta href */}
-				<a target='_blank' className={styles.containerImg}>
+				<a href='https://www.linkedin.com/in/jeronimo-pratto/' target='_blank' className={styles.containerImg}>
 					<img src={linkedin} alt='go to jeronimo linkedin' />
 				</a>
 				<a
