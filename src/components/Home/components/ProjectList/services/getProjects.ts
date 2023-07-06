@@ -8,7 +8,7 @@ const getProjects = (): ProjectInterface[] => {
 			title: 'Basement',
 			tags: '[ NEXTJS / REDUX TOOLKIT / TESTING ]',
 			urlGithub: 'https://github.com/JeroPratto/basement-challenge',
-			urlDeploy: 'https://basement-challenge-avl6jxuqz-jeropratto.vercel.app',
+			urlDeploy: 'https://basement-challenge-gamma.vercel.app/',
 			description: 'Challenge de Basement',
 		},
 		{
@@ -27,7 +27,7 @@ const getProjects = (): ProjectInterface[] => {
 			tags: '[ REACT / TYPESCRIPT ]',
 			urlGithub: 'https://github.com/JeroPratto/mercado-libre',
 			urlDeploy: 'https://mercado-libre-zeta.vercel.app/',
-			description: 'Clon de Mercado Libre',
+			description: 'Clon solo Desktop de Mercado Libre ( maquetado )',
 		},
 		{
 			urlImage: '/images/ProjectList/infobae.webp',
@@ -35,7 +35,7 @@ const getProjects = (): ProjectInterface[] => {
 			title: 'Infobae',
 			tags: '[ NEXTJS / TYPESCRIPT ]',
 			urlGithub: 'https://github.com/JeroPratto/clon-infobae',
-			urlDeploy: '',
+			urlDeploy: 'https://clon-infobae.vercel.app/',
 			description: 'Clon de Infobae',
 		},
 		{
