@@ -56,7 +56,7 @@ const getProjects = (): ProjectInterface[] => {
 			urlImageMobile: '/images/ProjectList/infobaeMobile.webp',
 			title: 'Infobae',
 			tags: '[ NEXTJS / TYPESCRIPT ]',
-			urlGithub: 'https://github.com/JeroPratto/clon-infobae',
+			urlGithub: 'https://github.com/JeroPratto/clon-infobae-publico',
 			urlDeploy: 'https://clon-infobae.vercel.app/',
 			description: 'Clon de Infobae',
 		},
