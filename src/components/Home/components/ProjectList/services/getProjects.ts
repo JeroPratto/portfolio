@@ -11,6 +11,17 @@ const getProjects = (): ProjectInterface[] => {
 			urlDeploy: 'https://basement-challenge-gamma.vercel.app/',
 			description: 'Challenge de Basement',
 		},
+		//
+		{
+			urlImage: '/images/ProjectList/the-line.webp',
+			urlImageMobile: '/images/ProjectList/the-line-mobile.webp',
+			title: 'The Line',
+			tags: '[ VUE.JS / VUETIFY / TYPESCRIPT ]',
+			urlGithub: 'https://github.com/JeroPratto/the-line-clon',
+			urlDeploy: 'https://the-line-clon.vercel.app/',
+			description: 'The Line clon',
+		},
+		//
 		{
 			urlImage: '/images/ProjectList/blog.webp',
 			urlImageMobile: '/images/ProjectList/blogMobile.webp',
@@ -20,6 +31,17 @@ const getProjects = (): ProjectInterface[] => {
 			urlDeploy: 'https://blog-personal-jero.vercel.app/',
 			description: 'Un blog de soluciones simples',
 		},
+		//
+		{
+			urlImage: '/images/ProjectList/leibal.webp',
+			urlImageMobile: '/images/ProjectList/leibal-mobile.webp',
+			title: 'Leibal',
+			tags: '[ VUE.JS / TYPESCRIPT / PINIA / JEST ]',
+			urlGithub: 'https://github.com/JeroPratto/leibal-clon',
+			urlDeploy: 'https://leibal-clon.vercel.app/',
+			description: 'Leibal clon',
+		},
+		//
 		{
 			urlImage: '/images/ProjectList/meli-1.webp',
 			urlImageMobile: '/images/ProjectList/meliMobile.webp',
