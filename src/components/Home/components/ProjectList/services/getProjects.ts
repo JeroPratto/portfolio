@@ -20,7 +20,6 @@ const getProjects = (): ProjectInterface[] => {
 			urlDeploy: 'https://the-line-clon.vercel.app/',
 			description: 'The Line clon',
 		},
-		//https://useform-clon.vercel.app/
 		{
 			urlImage: '/images/ProjectList/useform.webp',
 			urlImageMobile: '/images/ProjectList/useform-mobile.webp',
@@ -30,7 +29,6 @@ const getProjects = (): ProjectInterface[] => {
 			urlDeploy: 'https://useform-clon.vercel.app/',
 			description: 'Useform clon',
 		},
-		//
 		{
 			urlImage: '/images/ProjectList/blog.webp',
 			urlImageMobile: '/images/ProjectList/blogMobile.webp',
