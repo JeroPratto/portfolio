@@ -3,145 +3,23 @@
 	height: 95vh;
 	position: relative;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	transition: box-shadow 0.3s ease-in-out;
 }
+
 .containerProject:last-child {
 	margin-bottom: 200px;
 }
 
 .image {
-	opacity: 1;
 	width: 100%;
 	height: 100%;
-}
-
-.containerProject:hover {
-	.image {
-		transition: opacity 0.3s linear;
-		opacity: 0.35;
-	}
-	.containerInfo {
-		display: flex;
-	}
-	.tags,
-	.title,
-	.description,
-	.containerLinks {
-		animation: fadeIn 0.5s ease-in-out;
-		animation-fill-mode: both;
-	}
-	.tags {
-		animation-delay: 0.2s;
-	}
-	.title {
-		animation-delay: 0.4s;
-	}
-	.description {
-		animation-delay: 0.5s;
-	}
-	.containerLinks {
-		animation-delay: 0.6s;
-	}
-}
-.containerInfo {
-	position: absolute;
-	top: 0;
-	margin-top: 10%;
-	left: -40px;
-	color: #000;
-	height: 100%;
-	z-index: 100;
-	display: none;
-	flex-direction: column;
-	gap: 10px;
-}
-
-.tags {
-	font-size: 25px;
-	font-weight: bold;
-}
-.tags::before {
-	content: '';
-	position: absolute;
-	top: -20px;
-	height: 1px;
-	width: 84px;
-	background-color: #000;
-}
-.containerTitleAndDescription {
-	margin-bottom: 10px;
-}
-.title {
-	font-size: 65px;
-	font-weight: 700;
-}
-.description {
-	font-size: 35px;
-	font-weight: 700;
-}
-
-.containerLinks {
-	display: flex;
-	flex-direction: column;
-	font-size: 30px;
-}
-
-.link {
-	line-height: 45px;
-	padding: 3px 5px;
-	margin-top: 30px;
-	text-decoration: none;
-	color: #000;
-	width: 200px;
-	text-align: center;
-	border: 1px solid #000;
-	font-size: 16px;
-	font-weight: bold;
-	position: relative;
-	overflow: hidden;
-}
-
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
-		transform: translateX(-20px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
+	object-fit: cover;
+	opacity: 1;
+	transition: opacity 0.3s linear;
 }
 
 @media screen and (max-width: 800px) {
 	.image {
-		transition: opacity 0.3s linear;
-		opacity: 0.35;
-	}
-	.containerInfo {
-		display: flex;
-		margin-top: 30%;
-	}
-	.tags,
-	.title,
-	.description,
-	.containerLinks {
-		animation: fadeIn 0.5s ease-in-out;
-		animation-fill-mode: both;
-	}
-	.tags {
-		font-size: 15px;
-	}
-	.title {
-		font-size: 55px;
-	}
-	.description {
-		font-size: 25px;
-	}
-
-	.containerLinks {
-		font-size: 20px;
-	}
-	.link {
-		line-height: 35px;
-		width: 200px;
+		opacity: 0.35 !important;
 	}
 }

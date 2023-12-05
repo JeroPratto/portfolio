@@ -1,46 +1,40 @@
 import { ProjectInterface } from '@/models/Project.interface'
 import styles from './styles/project.module.css'
+import { AnimatePresence, motion } from 'framer-motion'
+import { useState } from 'react'
+import ProjectInfo from './ProjectInfo'
 
 export type ProjectProps = {
 	project: ProjectInterface
 }
 
 const Project: React.FC<ProjectProps> = ({ project }) => {
+	const [isHovered, setIsHovered] = useState(false)
+	const variants = {
+		hover: { opacity: 0.35 },
+		notHover: { opacity: 1 },
+	}
 	return (
-		<div className={styles.containerProject}>
-			<picture>
-				<source srcSet={project.urlImageMobile} media='(max-width: 800px)' />
-				<source srcSet={project.urlImage} media='(min-width: 801px)' />
-				<img
-					src={project.urlImage}
-					alt={project.description}
-					className={styles.image}
-				/>
-			</picture>
-			<div className={styles.containerInfo}>
-				<p className={styles.tags}>{project.tags}</p>
-				<div className={styles.containerTitleAndDescription}>
-					<h2 className={styles.title}>{project.title}</h2>
-					<p className={styles.description}>{project.description}</p>
-				</div>
-				<div className={styles.containerLinks}>
-					<a
-						className={`${styles.link} link`}
-						target='_blank'
-						href={project.urlGithub}
-					>
-						GO TO CODE
-					</a>
-					<a
-						className={`${styles.link} link`}
-						target='_blank'
-						href={project.urlDeploy}
-					>
-						VISIT THE PROJECT
-					</a>
-				</div>
-			</div>
-		</div>
+		<AnimatePresence>
+			<motion.div
+				className={styles.containerProject}
+				onMouseEnter={() => setIsHovered(true)}
+				onMouseLeave={() => setIsHovered(false)}
+			>
+				<picture>
+					<source srcSet={project.urlImageMobile} media='(max-width: 800px)' />
+					<motion.img
+						src={project.urlImage}
+						alt={project.description}
+						className={styles.image}
+						variants={variants}
+						animate={isHovered ? 'hover' : 'notHover'}
+						transition={{ duration: 0.3, ease: 'linear' }}
+					/>
+				</picture>
+				<ProjectInfo isHovered={isHovered} project={project} />
+			</motion.div>
+		</AnimatePresence>
 	)
 }
 
