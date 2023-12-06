@@ -1,6 +1,6 @@
 import { ProjectInterface } from '@/models/Project.interface'
 import styles from './styles/project.module.css'
-import { AnimatePresence, motion, useInView } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
 import ProjectInfo from './ProjectInfo'
 
