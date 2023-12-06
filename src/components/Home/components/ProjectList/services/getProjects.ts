@@ -3,6 +3,24 @@ import { ProjectInterface } from '@/models/Project.interface'
 const getProjects = (): ProjectInterface[] => {
 	const projetcs = [
 		{
+			urlImage: '/images/ProjectList/atlas.webp',
+			urlImageMobile: '/images/ProjectList/atlasMobile.webp',
+			title: 'Atlas',
+			tags: '[ REACT / VITE / FRAMER-MOTION ]',
+			urlGithub: 'https://github.com/JeroPratto/atlas-clon',
+			urlDeploy: 'https://atlas-clon.vercel.app/',
+			description: 'Atlas Clon',
+		},
+		{
+			urlImage: '/images/ProjectList/useform.webp',
+			urlImageMobile: '/images/ProjectList/useform-mobile.webp',
+			title: 'UseForm',
+			tags: '[ REACT / VITE / TYPESCRIPT ]',
+			urlGithub: 'https://github.com/JeroPratto/useform-clon',
+			urlDeploy: 'https://useform-clon.vercel.app/',
+			description: 'Useform clon',
+		},
+		{
 			urlImage: '/images/ProjectList/basement.webp',
 			urlImageMobile: '/images/ProjectList/basementMobile.webp',
 			title: 'Basement',
@@ -19,15 +37,6 @@ const getProjects = (): ProjectInterface[] => {
 			urlGithub: 'https://github.com/JeroPratto/the-line-clon',
 			urlDeploy: 'https://the-line-clon.vercel.app/',
 			description: 'The Line clon',
-		},
-		{
-			urlImage: '/images/ProjectList/useform.webp',
-			urlImageMobile: '/images/ProjectList/useform-mobile.webp',
-			title: 'UseForm',
-			tags: '[ REACT / VITE / TYPESCRIPT ]',
-			urlGithub: 'https://github.com/JeroPratto/useform-clon',
-			urlDeploy: 'https://useform-clon.vercel.app/',
-			description: 'Useform clon',
 		},
 		{
 			urlImage: '/images/ProjectList/blog.webp',
