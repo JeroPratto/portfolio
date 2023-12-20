@@ -21,6 +21,15 @@ const getProjects = (): ProjectInterface[] => {
 			description: 'Useform clon',
 		},
 		{
+			urlImage: '/images/ProjectList/cowboy-desktop.webp',
+			urlImageMobile: '/images/ProjectList/cowboy-mobile.webp',
+			title: 'Cowboy',
+			tags: '[ REACT / VITE / FRAMER-MOTION ]',
+			urlGithub: 'https://github.com/JeroPratto/cowboy-clon',
+			urlDeploy: 'https://cowboy-clon.vercel.app/',
+			description: 'Cowboy Clon',
+		},
+		{
 			urlImage: '/images/ProjectList/basement.webp',
 			urlImageMobile: '/images/ProjectList/basementMobile.webp',
 			title: 'Basement',
