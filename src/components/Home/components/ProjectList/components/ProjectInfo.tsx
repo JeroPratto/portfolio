@@ -46,16 +46,16 @@ const ProjectInfo: React.FC<ProjectInfoProps> = ({ isHovered, project }) => {
 				<a
 					className={`${styles.link} link`}
 					target='_blank'
-					href={project.urlGithub}
+					href={project.urlDeploy}
 				>
-					GO TO CODE
+					VISIT THE PROJECT
 				</a>
 				<a
 					className={`${styles.link} link`}
 					target='_blank'
-					href={project.urlDeploy}
+					href={project.urlGithub}
 				>
-					VISIT THE PROJECT
+					GO TO CODE
 				</a>
 			</motion.div>
 		</div>

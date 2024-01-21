@@ -3,6 +3,16 @@ import { ProjectInterface } from '@/models/Project.interface'
 const getProjects = (): ProjectInterface[] => {
 	const projetcs = [
 		{
+			urlImage: '/images/ProjectList/standardbots.webp',
+			urlImageMobile: '/images/ProjectList/standardbots-mobile.webp',
+			title: 'StandardBots',
+			tags: '[ REACT / VITE / TYPESCRIPT ]',
+			urlGithub: 'https://github.com/JeroPratto/standardbots-clon',
+			urlDeploy: 'https://standardbots-clon.vercel.app/',
+			description: 'StandardBots Clon',
+		},
+		//
+		{
 			urlImage: '/images/ProjectList/atlas.webp',
 			urlImageMobile: '/images/ProjectList/atlasMobile.webp',
 			title: 'Atlas',
