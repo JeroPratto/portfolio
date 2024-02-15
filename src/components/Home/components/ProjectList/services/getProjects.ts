@@ -3,6 +3,15 @@ import { ProjectInterface } from '@/models/Project.interface'
 const getProjects = (): ProjectInterface[] => {
 	const projetcs = [
 		{
+			urlImage: '/images/ProjectList/samara-portfolio.webp',
+			urlImageMobile: '/images/ProjectList/samara-mobile-portfolio.webp',
+			title: 'Samara Backyard',
+			tags: '[ REACT / VITE / TYPESCRIPT ]',
+			urlGithub: 'https://github.com/JeroPratto/samara-backyard-clon',
+			urlDeploy: 'https://samara-backyard-clon.vercel.app/',
+			description: 'Samara Backyard Casi Clon',
+		},
+		{
 			urlImage: '/images/ProjectList/standardbots.webp',
 			urlImageMobile: '/images/ProjectList/standardbots-mobile.webp',
 			title: 'StandardBots',
