@@ -1,9 +1,10 @@
 .containerProject {
 	width: 100%;
-	height: 100vh;
+	aspect-ratio: 1.8;
 	position: relative;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	transition: box-shadow 0.3s ease-in-out;
+	border-radius: 20px;
 }
 
 .containerProject:last-child {
@@ -16,10 +17,11 @@
 	object-fit: cover;
 	opacity: 1;
 	transition: opacity 0.3s linear;
+	border-radius: 20px;
 }
 
 @media screen and (max-width: 800px) {
 	.image {
-		opacity: 0.35 !important;
+		opacity: 0.6 !important;
 	}
 }

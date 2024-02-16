@@ -1,47 +1,46 @@
 .containerInfo {
 	position: absolute;
-	top: 0;
-	margin-top: 10%;
-	left: -40px;
+	top: 20px;
+	margin-left: 20px;
+	background-color: rgba(255, 255, 255, 1);
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	padding: 30px;
 	color: #000;
-	height: 100%;
 	z-index: 100;
 	flex-direction: column;
 	gap: 10px;
+	border-radius: 10px;
 }
 
 .tags {
+	margin-left: 5px;
 	font-size: 25px;
-	font-weight: bold;
+	font-weight: 400;
 }
-.tags::before {
-	content: '';
-	position: absolute;
-	top: -20px;
-	height: 1px;
-	width: 84px;
-	background-color: #000;
-}
+
 .title {
 	font-size: 65px;
-	font-weight: 700;
+	font-weight: 500;
+	margin: 10px 0;
+	margin-bottom: 20px;
 }
 
 .description {
+	display: none;
 	font-size: 35px;
-	font-weight: 700;
+	font-weight: 500;
 	margin-bottom: 10px;
 }
 
 .containerLinks {
 	display: flex;
-	flex-direction: column;
+	gap: 10px;
 	font-size: 30px;
+	margin-left: 5px;
 }
 .link {
 	line-height: 45px;
 	padding: 3px 5px;
-	margin-top: 30px;
 	text-decoration: none;
 	color: #000;
 	width: 200px;
@@ -51,33 +50,27 @@
 	font-weight: bold;
 	position: relative;
 	overflow: hidden;
+	border-radius: 4px;
 }
 @media screen and (max-width: 800px) {
 	.containerInfo {
-		display: flex;
+		opacity: 1 !important;
 		margin-top: 30%;
+		margin-left: -30%;
 	}
 	.tags {
 		font-size: 15px;
 	}
 	.title {
-		font-size: 55px;
-	}
-	.description {
-		font-size: 25px;
+		font-size: 40px;
 	}
 	.containerLinks {
-		font-size: 20px;
+		font-size: 15px;
+		gap: 10px;
 	}
 	.link {
 		line-height: 35px;
-		width: 200px;
-	}
-	.description,
-	.tags,
-	.title,
-	.description,
-	.containerLinks {
-		opacity: 1 !important;
+		width: auto;
+		padding: 3px 10px;
 	}
 }

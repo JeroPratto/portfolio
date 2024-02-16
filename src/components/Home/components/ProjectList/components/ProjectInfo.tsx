@@ -12,37 +12,15 @@ const ProjectInfo: React.FC<ProjectInfoProps> = ({ isHovered, project }) => {
 		notHover: { opacity: 0, x: -20 },
 	}
 	return (
-		<div className={styles.containerInfo}>
-			<motion.p
-				className={styles.tags}
-				variants={variants}
-				animate={isHovered ? ' hover' : 'notHover'}
-				transition={{ duration: 0.5, ease: 'easeInOut' }}
-			>
-				{project.tags}
-			</motion.p>
-			<motion.h2
-				className={styles.title}
-				variants={variants}
-				animate={isHovered ? ' hover' : 'notHover'}
-				transition={{ duration: 0.5, ease: 'easeInOut' }}
-			>
-				{project.title}
-			</motion.h2>
-			<motion.p
-				className={styles.description}
-				variants={variants}
-				animate={isHovered ? ' hover' : 'notHover'}
-				transition={{ delay: 0.1, duration: 0.5, ease: 'easeInOut' }}
-			>
-				{project.description}
-			</motion.p>
-			<motion.div
-				className={styles.containerLinks}
-				variants={variants}
-				animate={isHovered ? ' hover' : 'notHover'}
-				transition={{ delay: 0.2, duration: 0.5, ease: 'easeInOut' }}
-			>
+		<motion.div
+			className={styles.containerInfo}
+			variants={variants}
+			animate={isHovered ? ' hover' : 'notHover'}
+			transition={{ duration: 0.5, ease: 'easeInOut' }}
+		>
+			<p className={styles.tags}>{project.tags}</p>
+			<h2 className={styles.title}>{project.title}</h2>
+			<div className={styles.containerLinks}>
 				<a
 					className={`${styles.link} link`}
 					target='_blank'
@@ -57,8 +35,8 @@ const ProjectInfo: React.FC<ProjectInfoProps> = ({ isHovered, project }) => {
 				>
 					GO TO CODE
 				</a>
-			</motion.div>
-		</div>
+			</div>
+		</motion.div>
 	)
 }
 

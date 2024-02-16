@@ -11,14 +11,14 @@ export type ProjectProps = {
 const Project: React.FC<ProjectProps> = ({ project }) => {
 	const [isHovered, setIsHovered] = useState(false)
 	const ref = useRef(null)
-	const isInView = useInView(ref, { once: true })
+	const isInView = useInView(ref)
 	const variants = {
 		hover: { opacity: 0.35 },
 		notHover: { opacity: 1 },
 	}
 	const variantsContainer = {
 		inView: { opacity: 1, scale: 1 },
-		notInView: { opacity: 1, scale: 0.95 },
+		notInView: { opacity: 1, scale: 0.908313 },
 	}
 	return (
 		<motion.div
