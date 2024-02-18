@@ -12,16 +12,14 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
 	const [isHovered, setIsHovered] = useState(false)
 	const ref = useRef(null)
 	const isInView = useInView(ref)
-	const variants = {
-		hover: { opacity: 0.35 },
-		notHover: { opacity: 1 },
-	}
 	const variantsContainer = {
 		inView: { opacity: 1, scale: 1 },
 		notInView: { opacity: 1, scale: 0.908313 },
 	}
 	return (
-		<motion.div
+		<motion.a
+			href={project.urlDeploy}
+			target='_blank'
 			className={styles.containerProject}
 			variants={variantsContainer}
 			animate={isInView ? 'inView' : 'notInView'}
@@ -32,17 +30,19 @@ const Project: React.FC<ProjectProps> = ({ project }) => {
 		>
 			<picture>
 				<source srcSet={project.urlImageMobile} media='(max-width: 800px)' />
-				<motion.img
-					src={project.urlImage}
+				<img
+					src={project.urlImage[0]}
 					alt={project.description}
-					className={styles.image}
-					variants={variants}
-					animate={isHovered ? 'hover' : 'notHover'}
-					transition={{ duration: 0.3, ease: 'linear' }}
+					className={`${styles.image} ${styles.mainImage}`}
+				/>
+				<img
+					src={project.urlImage[1] ? project.urlImage[1] : project.urlImage[0]}
+					alt={project.description}
+					className={`${styles.image} ${styles.secondImage}`}
 				/>
 			</picture>
 			<ProjectInfo isHovered={isHovered} project={project} />
-		</motion.div>
+		</motion.a>
 	)
 }
 

@@ -3,7 +3,10 @@ import { ProjectInterface } from '@/models/Project.interface'
 const getProjects = (): ProjectInterface[] => {
 	const projetcs = [
 		{
-			urlImage: '/images/ProjectList/samara-portfolio.webp',
+			urlImage: [
+				'/images/ProjectList/samara/samara-portfolio.webp',
+				'/images/ProjectList/samara/carousel.webp',
+			],
 			urlImageMobile: '/images/ProjectList/samara-mobile-portfolio.webp',
 			title: 'Samara Backyard',
 			tags: '[ REACT / VITE / TYPESCRIPT ]',
@@ -12,7 +15,10 @@ const getProjects = (): ProjectInterface[] => {
 			description: 'Samara Backyard Casi Clon',
 		},
 		{
-			urlImage: '/images/ProjectList/standardbots.webp',
+			urlImage: [
+				'/images/ProjectList/standardbots/standardbots.webp',
+				'/images/ProjectList/standardbots/second-image.webp',
+			],
 			urlImageMobile: '/images/ProjectList/standardbots-mobile.webp',
 			title: 'StandardBots',
 			tags: '[ REACT / VITE / TYPESCRIPT ]',
@@ -22,25 +28,10 @@ const getProjects = (): ProjectInterface[] => {
 		},
 		//
 		{
-			urlImage: '/images/ProjectList/atlas.webp',
-			urlImageMobile: '/images/ProjectList/atlasMobile.webp',
-			title: 'Atlas',
-			tags: '[ REACT / VITE / FRAMER-MOTION ]',
-			urlGithub: 'https://github.com/JeroPratto/atlas-clon',
-			urlDeploy: 'https://atlas-clon.vercel.app/',
-			description: 'Atlas Clon',
-		},
-		{
-			urlImage: '/images/ProjectList/useform.webp',
-			urlImageMobile: '/images/ProjectList/useform-mobile.webp',
-			title: 'UseForm',
-			tags: '[ REACT / VITE / TYPESCRIPT ]',
-			urlGithub: 'https://github.com/JeroPratto/useform-clon',
-			urlDeploy: 'https://useform-clon.vercel.app/',
-			description: 'Useform clon',
-		},
-		{
-			urlImage: '/images/ProjectList/cowboy-desktop.webp',
+			urlImage: [
+				'/images/ProjectList/cowboy/cowboy-desktop.webp',
+				'/images/ProjectList/cowboy/second-image.webp',
+			],
 			urlImageMobile: '/images/ProjectList/cowboy-mobile.webp',
 			title: 'Cowboy',
 			tags: '[ REACT / VITE / FRAMER-MOTION ]',
@@ -49,7 +40,34 @@ const getProjects = (): ProjectInterface[] => {
 			description: 'Cowboy Clon',
 		},
 		{
-			urlImage: '/images/ProjectList/basement.webp',
+			urlImage: [
+				'/images/ProjectList/atlas/atlas.webp',
+				'/images/ProjectList/atlas/second-image.webp',
+			],
+			urlImageMobile: '/images/ProjectList/atlasMobile.webp',
+			title: 'Atlas',
+			tags: '[ REACT / VITE / FRAMER-MOTION ]',
+			urlGithub: 'https://github.com/JeroPratto/atlas-clon',
+			urlDeploy: 'https://atlas-clon.vercel.app/',
+			description: 'Atlas Clon',
+		},
+		{
+			urlImage: [
+				'/images/ProjectList/useform/main.webp',
+				'/images/ProjectList/useform/second-image.webp',
+			],
+			urlImageMobile: '/images/ProjectList/useform-mobile.webp',
+			title: 'UseForm',
+			tags: '[ REACT / VITE / TYPESCRIPT ]',
+			urlGithub: 'https://github.com/JeroPratto/useform-clon',
+			urlDeploy: 'https://useform-clon.vercel.app/',
+			description: 'Useform clon',
+		},
+		{
+			urlImage: [
+				'/images/ProjectList/basement/main.webp',
+				'/images/ProjectList/basement/second-image.webp',
+			],
 			urlImageMobile: '/images/ProjectList/basementMobile.webp',
 			title: 'Basement',
 			tags: '[ NEXTJS / REDUX TOOLKIT / TESTING ]',
@@ -58,8 +76,8 @@ const getProjects = (): ProjectInterface[] => {
 			description: 'Challenge de Basement',
 		},
 		{
-			urlImage: '/images/ProjectList/the-line.webp',
-			urlImageMobile: '/images/ProjectList/the-line-mobile.webp',
+			urlImage: ['/images/ProjectList/theline/main.webp'],
+			urlImageMobile: '/images/ProjectList/mobile.webp',
 			title: 'The Line',
 			tags: '[ VUE.JS / VUETIFY / TYPESCRIPT ]',
 			urlGithub: 'https://github.com/JeroPratto/the-line-clon',
@@ -67,7 +85,7 @@ const getProjects = (): ProjectInterface[] => {
 			description: 'The Line clon',
 		},
 		{
-			urlImage: '/images/ProjectList/blog.webp',
+			urlImage: ['/images/ProjectList/blog/blog.webp'],
 			urlImageMobile: '/images/ProjectList/blogMobile.webp',
 			title: 'Blog Personal',
 			tags: '[ NEXTJS / TYPESCRIPT / TAILWIND ]',
@@ -77,7 +95,7 @@ const getProjects = (): ProjectInterface[] => {
 		},
 		//
 		{
-			urlImage: '/images/ProjectList/leibal.webp',
+			urlImage: ['/images/ProjectList/leibal/leibal.webp'],
 			urlImageMobile: '/images/ProjectList/leibal-mobile.webp',
 			title: 'Leibal',
 			tags: '[ VUE.JS / TYPESCRIPT / PINIA / JEST ]',
@@ -87,7 +105,7 @@ const getProjects = (): ProjectInterface[] => {
 		},
 		//
 		{
-			urlImage: '/images/ProjectList/meli-1.webp',
+			urlImage: ['/images/ProjectList/meli/meli-1.webp'],
 			urlImageMobile: '/images/ProjectList/meliMobile.webp',
 			title: 'Mercado Libre',
 			tags: '[ REACT / TYPESCRIPT ]',
@@ -96,7 +114,7 @@ const getProjects = (): ProjectInterface[] => {
 			description: 'Clon solo Desktop de Mercado Libre ( maquetado )',
 		},
 		{
-			urlImage: '/images/ProjectList/infobae.webp',
+			urlImage: ['/images/ProjectList/infobae/infobae.webp'],
 			urlImageMobile: '/images/ProjectList/infobaeMobile.webp',
 			title: 'Infobae',
 			tags: '[ NEXTJS / TYPESCRIPT ]',
@@ -105,7 +123,7 @@ const getProjects = (): ProjectInterface[] => {
 			description: 'Clon de Infobae',
 		},
 		{
-			urlImage: '/images/ProjectList/portfolio.webp',
+			urlImage: ['/images/ProjectList/portfolio/portfolio.webp'],
 			urlImageMobile: '/images/ProjectList/portfolioMobile.webp',
 			title: 'Portfolio',
 			tags: '[ REACT / TYPESCRIPT]',
@@ -114,7 +132,7 @@ const getProjects = (): ProjectInterface[] => {
 			description: 'Portfolio',
 		},
 		{
-			urlImage: '/images/ProjectList/tablero.webp',
+			urlImage: ['/images/ProjectList/tablero/tablero.webp'],
 			urlImageMobile: '/images/ProjectList/tableroMobile.webp',
 			title: 'Tablero Kanban',
 			tags: '[ REACT / REDUX TOOLKIT / TYPESCRIPT]',

@@ -1,5 +1,5 @@
 export interface ProjectInterface {
-	urlImage: string
+	urlImage: string[]
 	urlImageMobile: string
 	title: string
 	description: string
