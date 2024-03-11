@@ -7,12 +7,25 @@ const getProjects = (): ProjectInterface[] => {
 				'/images/ProjectList/samara/samara-portfolio.webp',
 				'/images/ProjectList/samara/carousel.webp',
 			],
-			urlImageMobile: '/images/ProjectList/samara-mobile-portfolio.webp',
+			urlImageMobile: '/images/ProjectList/samara/samara-mobile-portfolio.webp',
 			title: 'Samara Backyard',
 			tags: '[ REACT / VITE / TYPESCRIPT ]',
 			urlGithub: 'https://github.com/JeroPratto/samara-backyard-clon',
 			urlDeploy: 'https://samara-backyard-clon.vercel.app/',
-			description: 'Samara Backyard Casi Clon',
+			description: 'Samara Backyard Clon',
+		},
+		{
+			urlImage: [
+				'/images/ProjectList/cruciblemoments/crucible-paypal.webp',
+				'/images/ProjectList/cruciblemoments/crucible-eventbrite.webp',
+			],
+			urlImageMobile:
+				'/images/ProjectList/cruciblemoments/crucible-mobile.webp',
+			title: 'Crucible Moments',
+			tags: '[ REACT / VITE / TYPESCRIPT / StoryBook]',
+			urlGithub: 'https://github.com/JeroPratto/crucible-moments',
+			urlDeploy: 'https://cruciblemoments.vercel.app/',
+			description: 'Crucible Moments Clon',
 		},
 		{
 			urlImage: [
@@ -26,6 +39,7 @@ const getProjects = (): ProjectInterface[] => {
 			urlDeploy: 'https://standardbots-clon.vercel.app/',
 			description: 'StandardBots Clon',
 		},
+
 		//
 		{
 			urlImage: [
